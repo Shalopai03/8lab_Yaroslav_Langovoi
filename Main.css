@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Сброс отступов и внутренних полей для всего документа */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b1b03; /* Цвет фона для всей страницы */
+}
+
+/* Стили для header с градиентным фоном */
+.header-section {
+  background: #3b1b03;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  text-align: center;
+}
+
+/* Логотип */
+.logo-container {
+  text-align: center;
+  margin-top: 0;
+  background: linear-gradient(135deg, #000000, #4d2100);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.logo-text {
+  margin-top: 10px; /* Отступ сверху для отделения от изображения */
+  font-size: 32px; /* Размер текста */
+  color: #ffffff; /* Цвет текста */
+}
+
+/* Квадратная коробка для текста */
+.Story {
+  width: 80%; /* Ширина коробки */
+  height: auto; /* Высота коробки */
+  background-color: #2ea50a; /* Цвет фона */
+  margin: 20px auto; /* Центрирование коробки на странице */
+  display: flex;
+  flex-direction: column; /* Направление текста сверху вниз */
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2ea50a; /* Граница коробки */
+  text-align: center;
+}
+
+/* Стили текста внутри коробки */
+.Story p {
+  font-size: 48px;
+  color: #f57207;
+}
+
+/* Контейнер списка */
+ul {
+  list-style-type: none; /* Убираем маркеры по умолчанию */
+  padding: 0; /* Убираем отступы */
+  text-align: left; /* Выровнять список по левому краю */
+}
+
+/* Стилизация элементов списка */
+ul li {
+  color: #f57207; /* Цвет текста */
+  padding: 10px; /* Внутренние отступы для удобочитаемости */
+  margin-bottom: 5px; /* Отступ между элементами */
+  border-radius: 4px; /* Края элементов слегка закруглены */
+  font-size: 48px;
+}
+
+.link {
+  display: flex;
+  padding: 10px 20px; /* Внутренние отступы */
+  color: #f57207; /* Цвет текста кнопки */
+  text-decoration: none; /* Убирает подчеркивание */
+  font-size: 32px; /* Размер текста */
+  text-align: center;
+  margin-top: 20px; /* Отступ сверху */
+}
+
+.beer_link {
+  display: flex;
+  justify-content: center; /* Центрирование кнопки */
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) { /* запрос для больших экранов */
+  .logo-container {
+    width: 90%; /* Увеличиваем ширину контейнера */
+}
+  body {
+    font-size: 16px; /* Немного уменьшаем размер шрифта */
+}
+}
+
+/* Мобильные устройства (ширина до 768px) */
+@media (max-width: 768px) {
+  .logo-container {
+      width: 100%;
+      padding: 0 10px; /* Добавляем отступы по бокам */
+  }
+  body {
+      font-size: 14px;
+  }
+}
+
+/* Маленькие экраны (ширина до 480px) */
+@media (max-width: 480px) {
+  .logo-container {
+      width: 100%;
+      padding: 0 5px; /* Ещё больше отступов для маленьких экранов */
+  }
+  body {
+      font-size: 12px;
+  }
+}
